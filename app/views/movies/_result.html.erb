@@ -1,0 +1,16 @@
+<div class="panel panel-info">
+  <div class="panel-body">
+    <div class="result">
+      <% @links.each do |link| %>
+        <dl>
+          <dt>File:</dt>
+          <dd><%= link[:file] %></dd>
+          <dt>Type:</dt>
+          <dd><%= link[:type] %></dd>
+          <dt>Label:</dt>
+          <dd><%= link[:label] %></dd>
+        </dl>
+      <% end %>
+    </div>
+  </div>
+</div>
